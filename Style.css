@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    /* box-sizing: border-box; */
+}
+#section1{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(Jay.jpg);
+    /* background-size: auto; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Section 1 */
+.navbar{
+    background-color: #00000059;
+    display: flex;
+    position: fixed;
+    width: 95rem;
+    height: 4rem;
+}
+.navbar a img{
+    width: 105px;
+    height: 84px;
+    margin-top: -9px;
+}
+ul{
+    display: flex;
+    margin-left: 53rem;
+}
+.navbar ul li{
+    padding: 7px 20px;
+    margin-top: 18px;
+    list-style: none;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.animation{
+    display: inline-block;
+    position: relative;
+}
+.animation::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #009688;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.animation:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Content Section */
+
+
+#content{                                                    /* ------------------------Important-------------------*/
+    display: flex;                                           /*  Very Important when we want to make text center center in Webpage*/ 
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.heading{
+    color: white;
+    font-size: 29px;
+}
+
+.skills p{
+    color: #009688;
+    font-family: sans-serif;
+    padding: 11px 0px;
+    width: 0ch;
+    overflow: hidden;
+    animation: text 8s infinite alternate;
+    white-space: nowrap;
+    border-right: 1px solid white;
+}
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 19ch;
+    }
+}
+.skills{
+    font-family: 'Lato', sans-serif;
+}
+.name{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+}
+
+/* Button */
+button{
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #009688;
+    border-radius: 25px;
+    padding: 12px 50px;
+    margin: 5px 15px;
+    position: relative;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+#span1{
+    background-color: #009688;
+    width: 0px;
+    height: 42px;
+    border-radius: 25px;
+    position: absolute;
+    left: -1px;
+    right: 0px;
+    bottom: -1px;
+    z-index: -1;
+    transition: 0.5s;
+}
+#span2{
+    background-color: #009688;
+    width: 0px;
+    height: 42px;
+    border-radius: 25px;
+    position: absolute;
+    left: -1px;
+    right: 0px;
+    bottom: -1px;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover #span1{
+    width: 154px;
+}
+button:hover #span2{
+    width: 189px;
+}
+button:hover{
+    border: none;
+}
+
+
+/* Section 2 */
+#section2{
+    padding: 28% 0px;
+    margin-top: 261px;
+    background-color: #ffffff;
+}
+.about{
+    /* background-color: aqua; */
+    margin: -26% 0%;
+}
+.content{
+    margin: -26% 0%;
+}
+.heading2{
+    font-family: sans-serif;
+    font-size: 42px;
+}
+
+.photo img{
+    width: 300px;
+    padding: 0px 81px;
+}
+.information{
+    margin-left: 37rem;
+}
+.title1{
+    margin-right: 19%;
+    font-family: sans-serif;
+}
+.title2{
+    font-size: 21px;
+    font-family: 'Baloo 2', cursive;
+    padding: 23px 12rem;
+}
+.cv input{
+    margin-right: 43%;
+    font-size: 15px;
+    font-family: 'Poppins';
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #d7d7d7;
+    border: none;
+}
+.cv input:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+/* Section 3 */
+
+#section3{
+    background-color: white;
+    width: 100%;
+    height: 57%;
+    padding: 90px 0px;
+}
+.services{
+    font-size: 40px;
+    color: black;
+    padding: 12px 10px;
+}
+.pservices{
+    color: black;
+}
+.box{
+    display: flex;
+    margin: 30px 76px;
+}
+.box1{
+    margin: 20px 24px;
+    padding: 69px 14px;
+    background-color: #80808042;
+    border-radius: 9px;
+    color: black;
+    cursor: pointer;
+}
+.box1:hover{
+    margin: 10px 10px;
+    color: white;
+    background-color: #191919;
+    transition-duration: 0.5s;
+
+}
+.pser{
+    padding: 30px 8px;
+    font-family: 'Baloo 2', cursive;
+}
+.hser{
+    margin-top: -32px;
+    font-size: 26px;
+    font-family: 'Poppins';
+}
+.line{
+    margin-top: -15%;
+}
+
+/* Section 4 */
+
+#section4{
+    background: url('1.jpg');
+    /* background-color: white; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 64%;
+    padding: 75px 0px;
+}
+.contact{
+    background-color: #8080808f;
+    width: 24%;
+    padding: 15px 17px;
+    border-radius: 10px;
+}
+.contact .email{
+    border: none;
+    padding: 14px 17px;
+    font-family: inherit;
+    border-radius: 6px;
+    font-size: 17px;
+    margin: 16px 12px;
+}
+.contact .yourname{
+    border: none;
+    font-family: inherit;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 14px 17px;
+    margin-top: 14px;
+
+}
+.contact .text{
+    border: none;
+    font-family: inherit;
+    font-size: 17px;
+    border-radius: 6px;
+    padding: 10px 10px;
+}
+.cont{
+    font-family: sans-serif;
+    margin: 12px 5px;
+}
+.submit a input{
+    padding: 13px 101px;
+    margin: 13px 11px;     
+    border-radius: 10px;    
+    border: none;     
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+}
+.yourname{
+    color: black;
+}
+.submit input:hover{
+    background-color: black;
+    transition-duration: 0.5s;
+    color: white;
+}
+
+/* Footer Section */
+footer{
+    padding: 2px 10px;
+    margin: 80px 0px;
+    background-color: #ffffff73;
+    color: black;
+}
+
